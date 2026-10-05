@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Online Member User ID Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Online Member User ID Registration</h1>
+
+        <p class="required">* Required Field</p>
+
+        <p class="instruction">
+            Please supply the following information as reported
+            to the Social Security System.
+        </p>
+
+        <form id="registrationForm">
+
+            <div class="form-group">
+                <label for="sssNumber">
+                    * CRN / SS Number
+                </label>
+
+                <input type="text" id="sssNumber">
+            </div>
+
+
+            <p class="warning">
+                If your email address is other than yahoo.com,
+                kindly inform your network administrator not to
+                block mail from sss.gov.ph.
+            </p>
+
+
+            <div class="form-group">
+
+                <label for="email">
+                    * Email Address
+                </label>
+
+                <input type="email" id="email">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="confirmEmail">
+                    * Confirm Email Address
+                </label>
+
+                <input type="email" id="confirmEmail">
+
+            </div>
+
+
+            <p class="warning">
+
+                Length must be 8-20 characters.
+                First character must be alphabetic.
+                No special characters except underscore.
+
+            </p>
+
+
+            <div class="form-group">
+
+                <label for="userId">
+                    * Preferred User ID
+                </label>
+
+                <input type="text" id="userId">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="confirmUserId">
+                    * Confirm Preferred User ID
+                </label>
+
+                <input type="text" id="confirmUserId">
+
+            </div>
+
+
+            <p class="warning">
+
+                The following characters are not allowed:
+                # % ( ) - " ' / &lt; &gt; \
+
+            </p>
+
+
+            <div class="form-group">
+
+                <label for="lastName">
+                    * Surname / Last Name
+                </label>
+
+                <input type="text" id="lastName">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="firstName">
+                    * Given Name
+                </label>
+
+                <input type="text" id="firstName">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="middleName">
+                    Middle Name
+                </label>
+
+                <input type="text" id="middleName">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="birthDate">
+                    * Date of Birth
+                </label>
+
+                <input type="date" id="birthDate">
+
+            </div>
+
+
+            <h2>
+                Mailing Address (Philippine Address)
+            </h2>
+
+
+            <div class="form-group">
+
+                <label for="building">
+                    Room / Floor / Unit No. & Building Name
+                </label>
+
+                <input type="text" id="building">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="house">
+                    House / Lot & Block No.
+                </label>
+
+                <input type="text" id="house">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="street">
+                    Street
+                </label>
+
+                <input type="text" id="street">
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label for="subdivision">
+                    Subdivision
+                </label>
+
+                <input type="text" id="subdivision">
+
+            </div>
+
+
+            <div class="location">
+
+                <label>
+                    <input
+                        type="radio"
+                        name="location"
+                        value="metro"
+                    >
+
+                    Metro Manila
+                </label>
+
+
+                <label>
+
+                    <input
+                        type="radio"
+                        name="location"
+                        value="province"
+                    >
+
+                    Province
+
+                </label>
+
+            </div>
+
+
+            <button type="submit">
+                Submit Registration
+            </button>
+
+
+            <p id="message"></p>
+
+        </form>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
